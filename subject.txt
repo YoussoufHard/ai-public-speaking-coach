@@ -1,0 +1,35 @@
+Projet B — AI Public Speaking Coach (Avatar Coach d’Oratoire)
+1. Objectif
+Un avatar qui observe une présentation (caméra + micro), évalue posture,
+gestuelle, débit, intonation, contact visuel, et donne un feedback chiffré +
+recommandations.
+2. fonctionnalités
+• Détection posture & présence (pose estimation)
+• Extraction métriques audio (débit, fillers, volume)
+• Génération d’un rapport sommaire + 3 recommandations
+• Interface web avec playback & timeline d’événements
+3. Modules & Stack
+• Vision : MediaPipe / OpenPose pour keypoints
+• Audio : STT (Whisper) + prosody features (pitch, energy) via Librosa
+• Action detection : heuristics (pauses longues, gesticulation)
+• NLP : LLM pour synthèse feedback
+• UI : React + video player + timeline
+4. Répartition
+1. Pose estimation & indicateurs non-verbaux
+2. Audio analytics (features + segmentation)
+3. NLP & scoring algorithm
+4. UI & intégration (timeline, export PDF rapport)
+5. Planning
+• pipeline capture vidéo/audio, extraction features
+• développement scoring metrics, premières règles
+• LLM pour feedback, UI timeline
+• tests, réglages scores, rapport final
+6. Livrables
+• Dashboard + vidéo annotée
+• Script d’évaluation automatique
+• Rapport + slides démo
+7. Évaluation (20)
+• 7 pts : pertinence des métriques & justifications
+• 6 pts : qualité du feedback (LLM) + recommandations actionnables
+• 4 pts : UI/UX (timeline, lisibilité)
+• 3 pts : rapport & code propre
