@@ -27,3 +27,39 @@ Goal:
 Status:
 - Project structure initialized
 - Vision pipeline ready
+
+## Incrément 1 – Sauvegarde des métriques non verbales
+
+Contexte :
+
+Les keypoints ont déjà été détectés  via MediaPipe Pose.
+
+Ajouts réalisés :
+
+Analyse des keypoints pour extraire des métriques :
+
+posture_score_raw : score de la posture (basé sur l’angle épaules-hanches)
+
+gesture_activity : amplitude des mouvements des bras
+
+head_orientation : orientation de la tête (front, left, right)
+
+Génération automatique d’un fichier JSON contenant toutes les métriques par frame :
+
+Chaque vidéo produit un fichier JSON unique, ex. metrics_videoplayback.json
+
+Le JSON est structuré et prêt pour un traitement ultérieur dans les modules de scoring et de feedback
+
+Mise à jour du .gitignore pour ignorer :
+
+Les fichiers JSON générés (metrics_*.json)
+
+Le modèle pose_landmarker_lite.task
+
+L’environnement virtuel .venv
+
+Impact :
+
+Permet de séparer le traitement de vision (keypoints) du traitement de scoring (métriques)
+
+Facilite l’intégration dans le pipeline global et le tableau de bord web
