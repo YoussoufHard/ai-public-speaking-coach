@@ -22,7 +22,7 @@ import numpy as np
 import json
 
 # --- Configuration ---
-VIDEO_PATH = "../data/videos/videoplayback.mp4"  # chemin vidéo
+VIDEO_PATH = "data/videos/videoplayback.mp4"  # chemin vidéo
 MODEL_PATH = "pose_landmarker_lite.task"        # chemin modèle
 MODEL_URL = "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task"
 
@@ -144,9 +144,6 @@ def main():
 
             # Convertir BGR → RGB
             image_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-
-            # Redimensionner en carré (256x256) pour éviter les warnings MediaPipe
-            image_rgb = cv2.resize(image_rgb, (256, 256))
 
             mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=image_rgb)
 

@@ -1,65 +1,132 @@
 # AI Public Speaking Coach
 
-AI Public Speaking Coach avatar is an intelligent system designed to analyze public speaking performances using multimodal data.
+AI Public Speaking Coach est un système intelligent conçu pour analyser les performances en prise de parole publique en utilisant des données multimodales.
 
-The system observes a presentation through video and audio inputs, extracts objective non-verbal and vocal metrics such as posture stability, gestures, speech rate, fillers, and voice modulation, and transforms these metrics into clear numerical scores.
+Le système observe une présentation via des entrées vidéo et audio, extrait des métriques objectives non-verbales et vocales telles que la stabilité de la posture, les gestes, le débit de parole, les mots de remplissage et la modulation vocale, et transforme ces métriques en scores numériques clairs.
 
-Based on these scores, the system generates structured, human-like feedback along with actionable recommendations to help speakers improve their delivery. Results are visualized through a web-based dashboard featuring a video player, performance scores, feedback summaries, and a timeline of key speaking events.
+Sur la base de ces scores, le système génère un feedback structuré, humain-like, ainsi que des recommandations actionnables pour aider les orateurs à améliorer leur prestation. Les résultats sont visualisés via un tableau de bord web comportant un lecteur vidéo, des scores de performance, des résumés de feedback et une timeline des événements clés de prise de parole.
 
-This project follows an incremental development approach and is intended for academic evaluation, focusing on clarity, interpretability, and practical usefulness rather than complex deep learning models.
+Ce projet suit une approche de développement incrémental et est destiné à une évaluation académique, en se concentrant sur la clarté, l'interprétabilité et l'utilité pratique plutôt que sur des modèles d'apprentissage profond complexes.
 
 
-## Project Structure
+## Structure du Projet
 
-- vision/     : Pose estimation and non-verbal analysis (Group 1)
-- audio/      : Speech and audio analysis (Group 2)
-- scoring/    : Metrics to scores conversion
-- feedback/   : LLM-based feedback generation
-- backend/    : API and integration
-- ui/         : Web dashboard (React)
+- vision/     : Estimation de pose et analyse non-verbale (Groupe 1)
+- audio/      : Analyse de la parole et de l'audio (Groupe 2)
+- scoring/    : Conversion métriques vers scores
+- feedback/   : Génération de feedback basé sur LLM
+- backend/    : API et intégration
+- ui/         : Tableau de bord web (React)
 
-## Increment 0 – Setup & Pose Visualization
+## Incrément 0 – Configuration & Visualisation de Pose
 
-Goal:
-- Load a presentation video
-- Visualize body keypoints using MediaPipe Pose
+Objectif :
+- Charger une vidéo de présentation
+- Visualiser les keypoints corporels avec MediaPipe Pose
 
-Status:
-- Project structure initialized
-- Vision pipeline ready
+Statut :
+- Structure du projet initialisée
+- Pipeline vision prêt
 
-## Incrément 1 – Sauvegarde des métriques non verbales
+## Incrément 1 – Extraction des Métriques Non-Verbales
 
-Contexte :
+**Objectif :**
+- Extraire les métriques non-verbales des keypoints de pose
+- Sauvegarder les métriques en JSON pour traitement ultérieur
 
-Les keypoints ont déjà été détectés  via MediaPipe Pose.
+**Statut :**
+- Réalisé par Groupe 1 (Youssouf & Hajar)
+- Métriques : posture_score_raw, gesture_activity, head_orientation
+- Sorties : metrics_test.json (échantillon), prêt pour vidéos réelles
 
-Ajouts réalisés :
+**Utilisation :**
+- Exécuter `python vision/pose_visualization.py` pour traiter une vidéo et générer le JSON des métriques
+- Pour vidéos réelles : Mettre à jour VIDEO_PATH dans le script
 
-Analyse des keypoints pour extraire des métriques :
+**Impact :**
+- Sépare le traitement vision du scoring
+- Permet l'intégration avec les métriques audio et la génération de feedback
 
-posture_score_raw : score de la posture (basé sur l’angle épaules-hanches)
+## Incrément 2 – Extraction des Métriques Audio
 
-gesture_activity : amplitude des mouvements des bras
+**Objectif :**
+- Extraire les métriques vocales de la piste audio
+- Métriques : speech_rate, fillers_count, avg_volume, pitch_variation
 
-head_orientation : orientation de la tête (front, left, right)
+**Statut :**
+- À implémenter par Groupe 2 (Benoit & Salma)
+- Placeholder : Utiliser données mock dans le scoring pour l'instant
 
-Génération automatique d’un fichier JSON contenant toutes les métriques par frame :
+**Sortie Attendue :**
+- JSON des métriques audio compatible avec le moteur de scoring
 
-Chaque vidéo produit un fichier JSON unique, ex. metrics_videoplayback.json
+## Incrément 3 – Système de Scoring (Vision + Audio)
 
-Le JSON est structuré et prêt pour un traitement ultérieur dans les modules de scoring et de feedback
+**Objectif :**
+- Convertir les métriques brutes en scores clairs 0-10
+- Permettre une évaluation interprétable par l'humain
 
-Mise à jour du .gitignore pour ignorer :
+**Statut :**
+- Réalisé par Groupe 1 (Youssouf & Hajar)
+- Règles de scoring définies pour posture, gestes, contact visuel, débit de parole, modulation vocale
 
-Les fichiers JSON générés (metrics_*.json)
+**Utilisation :**
+- Exécuter `python scoring/scoring_engine.py` pour générer scores_output.json
+- Utilise métriques vision de l'Inc 1 + données audio mock
+- Pour audio réel : Intégrer avec la sortie de l'Inc 2
 
-Le modèle pose_landmarker_lite.task
+**Fichiers :**
+- scoring/scoring_rules.py : Fonctions de scoring
+- scoring/scoring_engine.py : Moteur principal
+- scoring/scoring_test.py : Script de test
+- scoring/scores_output.json : Sortie d'exemple
 
-L’environnement virtuel .venv
+**Impact :**
+- Base pour le feedback LLM et le tableau de bord UI
+- Scores prêts pour évaluation globale et recommandations
 
-Impact :
+## Incrément 4 – Score Global
 
-Permet de séparer le traitement de vision (keypoints) du traitement de scoring (métriques)
+**Objectif :**
+- Combiner les scores partiels en une note finale unique
+- Fournir une évaluation globale de la performance
 
-Facilite l’intégration dans le pipeline global et le tableau de bord web
+**Statut :**
+- Réalisé par Groupe 1 (Youssouf & Hajar)
+- Formule : Posture 30%, Gestuelle 25%, Orientation tête 15%, Voix 30% (moyenne débit + modulation)
+
+**Utilisation :**
+- Exécuter `python scoring/global_score.py` pour générer global_score.json
+- Utilise scores_output.json de l'Inc 3
+
+**Fichiers :**
+- scoring/global_score.py : Calcul du score global
+- scoring/global_score.json : Sortie d'exemple
+
+**Impact :**
+- Score unique pour feedback et UI
+- Prêt pour intégration avec LLM et timeline
+
+## Incrément 5 – Feedback Intelligent
+
+**Objectif :**
+- Transformer scores en feedback humain-like
+- Générer résumé et recommandations actionnables
+
+**Statut :**
+- Réalisé par Groupe 1 (Youssouf & Hajar)
+- Approche hybride : règles + LLM (Gemini)
+- Prompt intelligent pour feedback coach-like
+
+**Utilisation :**
+- Exécuter `python feedback/feedback_generator.py` pour générer feedback_output.json
+- Utilise scores_output.json et global_score.json
+- Configure GEMINI_API_KEY dans .env pour LLM réel
+
+**Fichiers :**
+- feedback/feedback_generator.py : Générateur de feedback
+- feedback/feedback_output.json : Exemple de sortie
+
+**Impact :**
+- Feedback compréhensible et motivant
+- Base pour UI et évaluation finale
