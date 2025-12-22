@@ -1,0 +1,3262 @@
+[
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.21,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.15,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.21,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.16,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.19,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.14,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.08,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.19,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.2,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.2,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.22,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.21,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.18,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.16,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.16,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.15,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.21,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.17,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.19,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.34,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.34,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.98,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.28,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.27,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.26,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.26,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.91,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.91,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.91,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.9,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.9,
+        "gesture_activity": 0.26,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.9,
+        "gesture_activity": 0.26,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.9,
+        "gesture_activity": 0.26,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.9,
+        "gesture_activity": 0.26,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.9,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.9,
+        "gesture_activity": 0.26,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.9,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.9,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.9,
+        "gesture_activity": 0.27,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.89,
+        "gesture_activity": 0.27,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.89,
+        "gesture_activity": 0.28,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.89,
+        "gesture_activity": 0.28,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.89,
+        "gesture_activity": 0.28,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.89,
+        "gesture_activity": 0.28,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.89,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.9,
+        "gesture_activity": 0.28,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.91,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.91,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.91,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.91,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.91,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.91,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.91,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.62,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.98,
+        "gesture_activity": 0.62,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.59,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.59,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.61,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.61,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.61,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.61,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.61,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.61,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.61,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.61,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.61,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.98,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.98,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.98,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.59,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.57,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.56,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.56,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.56,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.56,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.56,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.56,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.56,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.56,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.55,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.55,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.55,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.55,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.54,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.54,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.54,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.53,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.53,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.53,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.91,
+        "gesture_activity": 0.54,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.91,
+        "gesture_activity": 0.54,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.53,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.53,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.52,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.52,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.53,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.53,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.52,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.53,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.54,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.55,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.56,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.57,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.59,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.59,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.59,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.59,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.59,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.59,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.59,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.57,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.57,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.56,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.54,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.53,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.51,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.51,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.5,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.5,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.5,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.5,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.49,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.48,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.48,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.46,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.42,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.38,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.36,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.36,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.36,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.36,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.36,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.38,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.39,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.42,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.45,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.45,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.45,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.43,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.41,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.38,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.37,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.36,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.35,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.35,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.34,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.37,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.41,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.44,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.47,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.48,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.5,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.51,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.52,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.53,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.53,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.53,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.52,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.52,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.52,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.52,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.52,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.52,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.51,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.49,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.38,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.37,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.37,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.38,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.37,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.37,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.37,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.37,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.36,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.35,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.35,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.98,
+        "gesture_activity": 0.35,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.35,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.35,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.36,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.37,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.39,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.39,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.41,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.42,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.42,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.42,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.42,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.43,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.43,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.43,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.43,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.98,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.98,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.43,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.43,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.43,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.43,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.42,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.42,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.37,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.35,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.34,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.32,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.3,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.28,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.26,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.25,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.23,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.23,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.23,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.93,
+        "gesture_activity": 0.22,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.21,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.2,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.95,
+        "gesture_activity": 0.2,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.96,
+        "gesture_activity": 0.2,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.97,
+        "gesture_activity": 0.21,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.98,
+        "gesture_activity": 0.21,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.21,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.21,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.21,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.22,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.22,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.22,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.22,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.22,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.22,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.22,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.22,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.22,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.22,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.22,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.24,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.27,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.94,
+        "gesture_activity": 0.27,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.92,
+        "gesture_activity": 0.28,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.9,
+        "gesture_activity": 0.29,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.89,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.89,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.9,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.89,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.88,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.3,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.86,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.86,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.88,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.86,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.86,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.86,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.86,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.87,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.84,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.34,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.34,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.81,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.81,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.81,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.34,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.84,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.81,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.81,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.81,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.85,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.85,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.86,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.86,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.85,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.31,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.81,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.81,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.78,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.77,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.76,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.76,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.77,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.76,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.76,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.76,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.76,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.76,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.76,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.76,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.77,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.76,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.77,
+        "gesture_activity": 0.32,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.78,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.78,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.78,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.81,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.34,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.33,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.34,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.34,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.34,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.34,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.35,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.38,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.81,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.76,
+        "gesture_activity": 0.43,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.73,
+        "gesture_activity": 0.48,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.73,
+        "gesture_activity": 0.52,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.73,
+        "gesture_activity": 0.56,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.77,
+        "gesture_activity": 0.61,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.75,
+        "gesture_activity": 0.63,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.77,
+        "gesture_activity": 0.64,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.73,
+        "gesture_activity": 0.66,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.69,
+        "gesture_activity": 0.65,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.68,
+        "gesture_activity": 0.64,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.66,
+        "gesture_activity": 0.62,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.68,
+        "gesture_activity": 0.62,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.67,
+        "gesture_activity": 0.61,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.69,
+        "gesture_activity": 0.6,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.69,
+        "gesture_activity": 0.6,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.71,
+        "gesture_activity": 0.6,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.72,
+        "gesture_activity": 0.6,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.73,
+        "gesture_activity": 0.61,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.74,
+        "gesture_activity": 0.61,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.75,
+        "gesture_activity": 0.61,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.75,
+        "gesture_activity": 0.6,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.75,
+        "gesture_activity": 0.61,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.75,
+        "gesture_activity": 0.61,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.74,
+        "gesture_activity": 0.61,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.77,
+        "gesture_activity": 0.62,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.79,
+        "gesture_activity": 0.62,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.8,
+        "gesture_activity": 0.63,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.62,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.62,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.57,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.57,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.84,
+        "gesture_activity": 0.57,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.84,
+        "gesture_activity": 0.56,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.84,
+        "gesture_activity": 0.56,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.57,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.57,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.57,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.6,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.82,
+        "gesture_activity": 0.6,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.86,
+        "gesture_activity": 0.58,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.86,
+        "gesture_activity": 0.57,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.86,
+        "gesture_activity": 0.57,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.86,
+        "gesture_activity": 0.57,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.85,
+        "gesture_activity": 0.57,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.84,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.85,
+        "gesture_activity": 0.57,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.84,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.57,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.84,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.84,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.84,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.83,
+        "gesture_activity": 0.58,
+        "head_orientation": "left"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.61,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 0.99,
+        "gesture_activity": 0.61,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.59,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.56,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.48,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.44,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.38,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.37,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.38,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.39,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.39,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.41,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.41,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.41,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.39,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.39,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.4,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.39,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.39,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.39,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.41,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.41,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.41,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.41,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.39,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.39,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.39,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.41,
+        "head_orientation": "front"
+    },
+    {
+        "posture_score_raw": 1.0,
+        "gesture_activity": 0.41,
+        "head_orientation": "front"
+    }
+]

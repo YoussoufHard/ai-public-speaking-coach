@@ -3,3 +3,5 @@ opencv-python
 mediapipe>=0.10.5
 
 numpy
+google-genai
+python-dotenv
