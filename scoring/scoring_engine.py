@@ -1,5 +1,5 @@
 import json
-from scoring_rules import *
+from .scoring_rules import *
 
 def compute_scores(vision_metrics, audio_metrics):
     scores = {

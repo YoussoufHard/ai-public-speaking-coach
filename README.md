@@ -130,3 +130,93 @@ Statut :
 **Impact :**
 - Feedback compréhensible et motivant
 - Base pour UI et évaluation finale
+
+## Backend API
+
+**Objectif :**
+- Exposer les fonctionnalités d'analyse via une API REST
+- Permettre l'intégration avec l'interface utilisateur React
+- Gérer l'upload de vidéos et retourner les résultats d'analyse
+
+**Statut :**
+- Réalisé
+- API FastAPI fonctionnelle avec endpoints pour analyse vidéo
+- Support pour données mock et analyse réelle
+
+**Utilisation :**
+- Lancer le serveur : `cd backend && python main.py`
+- API disponible sur `http://localhost:8000`
+- Documentation Swagger : `http://localhost:8000/docs`
+
+**Endpoints :**
+- `POST /analyze` : Analyse d'une vidéo uploadée (MP4)
+- `GET /analyze/mock` : Retourne des données d'exemple pour tests UI
+
+**Structure :**
+- backend/main.py : Application FastAPI principale
+- backend/routers/analyze.py : Endpoints d'analyse
+- backend/services/ : Services modulaires (vision, audio, scoring, feedback)
+- backend/models/schemas.py : Modèles de données Pydantic
+- backend/utils/file_handler.py : Gestion des fichiers uploadés
+
+**Pipeline d'Analyse Complet :**
+
+1. **Upload Frontend → Backend**
+   - Frontend envoie vidéo MP4 via `POST /analyze` (multipart/form-data)
+   - Backend valide le fichier et le sauvegarde temporairement
+
+2. **Extraction Métriques Vision**
+   - Utilise MediaPipe Pose Landmarker pour détecter keypoints corporels
+   - Calcule posture (angle épaules-hanches), gestes (amplitude bras), orientation tête
+   - Traite jusqu'à 900 frames maximum pour performance
+
+3. **Extraction Métriques Audio**
+   - Actuellement mock : génère speech_rate, pitch_variation, etc.
+   - Prévu pour intégration réelle avec librosa/speech_recognition
+
+4. **Calcul des Scores**
+   - Applique règles de scoring (0-10) pour chaque métrique
+   - Calcule score global pondéré (posture 30%, gestes 25%, regard 15%, voix 30%)
+
+5. **Génération Feedback IA**
+   - Détecte faiblesses automatiques
+   - Utilise Gemini API pour feedback humain-like + 3 recommandations
+
+6. **Timeline Événements**
+   - Identifie timestamps des problèmes détectés
+   - Actuellement basé sur scores, extensible pour timeline détaillée
+
+7. **Réponse Structurée**
+   - Retourne JSON avec scores, timeline, et feedback
+   - Frontend nettoie automatiquement les fichiers temporaires
+
+**Response Format :**
+```json
+{
+  "scores": {
+    "posture": 7,
+    "gestures": 6,
+    "eye_contact": 5,
+    "speech_rate": 6,
+    "voice_modulation": 7,
+    "global_score": 6.2
+  },
+  "timeline": [
+    { "time": 10, "event": "Low eye contact" },
+    { "time": 23, "event": "Fast speech rate" }
+  ],
+  "feedback": {
+    "summary": "Good posture but speech is too fast.",
+    "recommendations": [
+      "Slow down your speaking rate",
+      "Maintain eye contact",
+      "Use gestures more intentionally"
+    ]
+  }
+}
+```
+
+**Impact :**
+- API prête pour intégration frontend
+- Architecture modulaire et maintenable
+- Support pour analyse temps réel et traitement par lots
