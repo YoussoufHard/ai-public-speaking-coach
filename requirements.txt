@@ -8,3 +8,9 @@ python-dotenv
 fastapi
 uvicorn[standard]
 python-multipart
+
+# Audio processing dependencies
+openai-whisper>=20231117
+librosa>=0.10.0
+soundfile>=0.12.1
+pydub>=0.25.1

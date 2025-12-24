@@ -45,15 +45,23 @@ def download_model():
         urllib.request.urlretrieve(MODEL_URL, MODEL_PATH)
         print("Model downloaded.")
 
+def enhance_frame(frame, alpha=1.2, beta=10):
+    """
+    Améliore la qualité de la frame : contraste et luminosité
+    alpha : facteur de contraste (>1 pour augmenter)
+    beta : offset de luminosité
+    """
+    return cv2.convertScaleAbs(frame, alpha=alpha, beta=beta)
+
 def calculate_angle(a, b, c):
     """Calcule l'angle en degrés entre trois points (a-b-c)"""
     a = np.array(a)
     b = np.array(b)
     c = np.array(c)
-    
+
     ba = a - b
     bc = c - b
-    
+
     cosine_angle = np.dot(ba, bc) / (np.linalg.norm(ba) * np.linalg.norm(bc))
     angle = np.arccos(np.clip(cosine_angle, -1.0, 1.0))
     return np.degrees(angle)
@@ -142,6 +150,9 @@ def main():
             if not ret:
                 break
 
+            # Améliorer la qualité de la frame (contraste et luminosité)
+            frame = enhance_frame(frame, alpha=1.2, beta=10)
+
             # Convertir BGR → RGB
             image_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
@@ -187,10 +198,42 @@ def main():
         cap.release()
         cv2.destroyAllWindows()
 
+        # --- Calcul des métriques globales ---
+        if metrics_list:
+            posture_scores = [m['posture_score_raw'] for m in metrics_list]
+            gesture_scores = [m['gesture_activity'] for m in metrics_list]
+
+            global_metrics = {
+                "total_frames": len(metrics_list),
+                "posture_avg": round(np.mean(posture_scores), 2),
+                "gesture_avg": round(np.mean(gesture_scores), 2),
+                "posture_normalized": [
+                    round((s - min(posture_scores)) / (max(posture_scores) - min(posture_scores)) if max(posture_scores) > min(posture_scores) else 0, 2)
+                    for s in posture_scores
+                ],
+                "gesture_normalized": [
+                    round((s - min(gesture_scores)) / (max(gesture_scores) - min(gesture_scores)) if max(gesture_scores) > min(gesture_scores) else 0, 2)
+                    for s in gesture_scores
+                ]
+            }
+
+            # Ajouter les métriques globales à chaque frame
+            for i, m in enumerate(metrics_list):
+                m['posture_normalized'] = global_metrics['posture_normalized'][i]
+                m['gesture_normalized'] = global_metrics['gesture_normalized'][i]
+
+            # Sauvegarder avec métriques globales
+            output_data = {
+                "global_metrics": global_metrics,
+                "frame_metrics": metrics_list
+            }
+        else:
+            output_data = {"global_metrics": {}, "frame_metrics": []}
+
         # --- Sauvegarde JSON ---
         with open("metrics_test.json", "w") as f:
-            json.dump(metrics_list, f, indent=4)
-        print(f"Metrics saved to metrics_test.json, total frames: {len(metrics_list)}")
+            json.dump(output_data, f, indent=4)
+        print(f"Metrics saved to metrics_test.json, total frames: {len(metrics_list) if metrics_list else 0}")
 
 if __name__ == "__main__":
     main()

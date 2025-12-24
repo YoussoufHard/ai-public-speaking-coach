@@ -6,7 +6,7 @@ Backend API built with FastAPI for analyzing public speaking videos using comput
 
 - **Video Analysis**: Upload MP4 videos for comprehensive analysis
 - **Vision Metrics**: Pose detection, gesture analysis, eye contact detection
-- **Audio Metrics**: Speech rate, voice modulation analysis (currently mock)
+- **Audio Metrics**: Complete speech analysis with Whisper transcription and Librosa spectral analysis
 - **Scoring System**: Automated scoring for posture, gestures, eye contact, speech rate, voice modulation
 - **AI Feedback**: LLM-generated personalized feedback and recommendations
 - **Timeline Events**: Key moments identification during the presentation
@@ -90,7 +90,7 @@ backend/
 │   └── analyze.py          # Analysis endpoints
 ├── services/
 │   ├── vision_service.py   # Computer vision processing
-│   ├── audio_service.py    # Audio analysis (mock)
+│   ├── audio_service.py    # Audio analysis (Whisper + Librosa)
 │   ├── scoring_service.py  # Score calculation
 │   └── feedback_service.py # AI feedback generation
 ├── models/
@@ -106,9 +106,15 @@ backend/
 - OpenCV: Video processing
 - Google GenAI: AI feedback generation
 - Uvicorn: ASGI server
+- OpenAI Whisper: Speech transcription
+- Librosa: Audio signal processing
+- SoundFile: Audio file I/O
+- FFmpeg: Audio/video processing
 
 ## Notes
 
-- Audio analysis is currently mocked. Real audio processing can be implemented using libraries like `librosa` or `speech_recognition`
-- The vision service downloads the MediaPipe model automatically on first use
-- Videos are temporarily stored during processing and cleaned up automatically
+- **Audio Processing**: Utilise Whisper pour la transcription et Librosa pour l'analyse spectrale, avec fallback automatique vers données mock en cas d'erreur
+- **Vision Service**: Télécharge automatiquement le modèle MediaPipe lors du premier usage
+- **Gestion des Fichiers**: Les vidéos sont stockées temporairement puis supprimées automatiquement
+- **Performance**: Limitation à 900 frames pour éviter les timeouts de traitement
+- **FFmpeg**: Requis pour l'extraction audio des vidéos

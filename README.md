@@ -54,11 +54,24 @@ Statut :
 - Métriques : speech_rate, fillers_count, avg_volume, pitch_variation
 
 **Statut :**
-- À implémenter par Groupe 2 (Benoit & Salma)
-- Placeholder : Utiliser données mock dans le scoring pour l'instant
+- Réalisé par Groupe 2 (Benoit & Salma)
+- Pipeline complet : extraction audio + transcription Whisper + analyse librosa
+- Scoring détaillé avec seuils optimaux pour débit, fillers, pauses, volume, intonation
 
-**Sortie Attendue :**
-- JSON des métriques audio compatible avec le moteur de scoring
+**Technologies :**
+- **Whisper** : Transcription automatique en français
+- **Librosa** : Analyse spectrale (pitch, volume, pauses)
+- **FFmpeg** : Extraction audio des vidéos
+
+**Métriques Extraites :**
+- Débit de parole (mots/minute)
+- Pourcentage de mots de remplissage (fillers)
+- Caractéristiques spectrales (pitch, volume)
+- Détection de pauses silencieuses
+- Transcription complète avec timestamps
+
+**Sortie :**
+- Métriques brutes + scores détaillés (0-10) pour chaque aspect vocal
 
 ## Incrément 3 – Système de Scoring (Vision + Audio)
 
@@ -220,3 +233,4 @@ Statut :
 - API prête pour intégration frontend
 - Architecture modulaire et maintenable
 - Support pour analyse temps réel et traitement par lots
+- **Feedback multilingue** : Adaptation automatique français/anglais selon la langue de la vidéo

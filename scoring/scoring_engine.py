@@ -2,12 +2,24 @@ import json
 from .scoring_rules import *
 
 def compute_scores(vision_metrics, audio_metrics):
+    # Use detailed audio scores if available, otherwise fall back to simple scoring
+    audio_scores = audio_metrics.get("audio_scores")
+
+    if audio_scores:
+        # Use detailed audio scoring from audio team
+        speech_rate_score = audio_scores["debit"]
+        voice_modulation_score = (audio_scores["intonation"] + audio_scores["volume"]) / 2  # Combine intonation and volume
+    else:
+        # Fall back to simple scoring rules
+        speech_rate_score = score_speech_rate(audio_metrics["speech_rate"])
+        voice_modulation_score = score_voice_modulation(audio_metrics["pitch_variation"])
+
     scores = {
         "posture_score": score_posture(vision_metrics["posture_score_raw"]),
         "gesture_score": score_gesture(vision_metrics["gesture_activity"]),
         "eye_contact_score": score_eye_contact(vision_metrics["head_orientation"]),
-        "speech_rate_score": score_speech_rate(audio_metrics["speech_rate"]),
-        "voice_modulation_score": score_voice_modulation(audio_metrics["pitch_variation"])
+        "speech_rate_score": speech_rate_score,
+        "voice_modulation_score": voice_modulation_score
     }
     return scores
 
