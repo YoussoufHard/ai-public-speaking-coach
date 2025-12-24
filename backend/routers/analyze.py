@@ -28,7 +28,7 @@ async def analyze_video(file: UploadFile = File(...)):
         scores = calculate_scores(vision_metrics, audio_metrics)
 
         # Generate feedback
-        feedback = generate_feedback_response(scores)
+        feedback = generate_feedback_response(scores, audio_metrics)
 
         # Mock timeline (for now, based on scores)
         timeline = []

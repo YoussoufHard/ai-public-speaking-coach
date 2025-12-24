@@ -103,16 +103,33 @@ const [error, setError] = useState(null);
 
 #### 3.2 Service Audio (audio_service.py)
 
-**Statut** : Implementation mock
-**Technologies Futures** : librosa, speech_recognition, pyAudioAnalysis
+**Statut** : Implémentation complète
+**Technologies** : OpenAI Whisper, Librosa, SoundFile, FFmpeg
 
-**Métriques Simulées** :
+**Pipeline Audio** :
+1. **Extraction** : FFmpeg extrait l'audio WAV (16kHz, mono)
+2. **Transcription** : Whisper transcrit le discours en français
+3. **Analyse Spectrale** : Librosa calcule pitch, volume, pauses
+4. **Détection Fillers** : Regex recherche mots de remplissage français
+5. **Scoring Détaillé** : Algorithmes spécialisés pour chaque métrique
+
+**Métriques Réelles** :
 ```python
 {
-    "speech_rate": int,        # mots par minute (120-180)
-    "pitch_variation": float,  # variation de pitch (20-50)
-    "fillers_count": int,      # mots de remplissage (0-20)
-    "avg_volume": float        # volume moyen (0.01-0.05)
+    "debit_mots_par_minute": float,    # calculé précisément
+    "fillers": {
+        "pourcentage": float,          # % de fillers
+        "nombre_total": int,           # nombre absolu
+        "detail": dict                 # par type de filler
+    },
+    "audio_features": {
+        "volume_moyen": float,         # RMS energy
+        "pitch_moyen": float,          # fréquence fondamentale
+        "pauses": list,                # timestamps et durées
+        "pitch_std": float             # variation intonation
+    },
+    "transcription": str,              # texte complet
+    "segments": list                   # transcription avec timestamps
 }
 ```
 
@@ -138,10 +155,11 @@ global_score = (posture × 0.3) + (gestes × 0.25) + (regard × 0.15) + (voix ×
 **IA Integration** : Google Gemini 1.5 Pro
 
 **Processus** :
-1. Détection automatique des faiblesses (< 5 points)
-2. Génération de prompt structuré pour l'IA
-3. Appel API Gemini avec contexte des scores
-4. Parsing de la réponse JSON
+1. **Détection de langue** : Analyse automatique de la langue parlée dans la vidéo
+2. Détection automatique des faiblesses (< 5 points)
+3. Génération de prompt structuré pour l'IA (dans la langue appropriée)
+4. Appel API Gemini avec contexte des scores
+5. Parsing de la réponse JSON dans la langue détectée
 
 **Prompt Structure** :
 ```
@@ -207,6 +225,7 @@ class AnalysisResponse(BaseModel):
 - **Node.js 16+** : Runtime frontend
 - **Git** : Version control
 - **Virtualenv** : Isolation environnement Python
+- **FFmpeg** : Traitement audio/vidéo (requis pour extraction audio)
 
 ## Configuration et Déploiement
 
@@ -245,9 +264,13 @@ ai-public-speaking-coach/
 │   │   └── App.jsx         # Application principale
 │   └── package.json
 ├── vision/                 # Analyse vidéo
-├── audio/                  # Analyse audio (futur)
+├── audio/                  # Analyse audio (Whisper + Librosa)
+│   ├── audio_extraction.py # Pipeline extraction + transcription
+│   └── audio_scoring.py    # Calcul scores détaillés
 ├── scoring/                # Système de scoring
 ├── feedback/               # Génération IA
+├── backend/                # API FastAPI
+├── ui/                     # Interface React
 ├── data/videos/            # Stockage temporaire
 └── requirements.txt        # Dépendances Python
 ```
@@ -310,5 +333,32 @@ ai-public-speaking-coach/
 - **Logs** : Traçabilité des erreurs et performances
 - **Métriques** : Temps de traitement, taux de succès
 - **Health Checks** : Endpoints de monitoring système
+
+## Support Multilingue
+
+### Détection de Langue
+- **Whisper** détecte automatiquement la langue parlée dans la vidéo
+- Support principal : Français (`fr`) et Anglais (`en`)
+- Fallback par défaut : Français
+
+### Adaptation du Feedback
+- **Prompts IA** : Versions française et anglaise selon la langue détectée
+- **Fillers** : Listes de mots de remplissage spécifiques à chaque langue
+- **Réponse** : Feedback généré dans la même langue que la présentation
+
+### Langues Supportées
+```python
+# Fillers français
+['euh', 'heu', 'donc', 'voilà', 'en fait', 'bon', 'genre']
+
+# Fillers anglais
+['um', 'uh', 'like', 'you know', 'so', 'well', 'actually']
+```
+
+### Processus de Détection
+1. **Transcription** : Whisper analyse l'audio sans langue prédéfinie
+2. **Classification** : Retourne le code langue détecté (`fr`, `en`, etc.)
+3. **Adaptation** : Sélection des fillers et prompts appropriés
+4. **Génération** : Feedback IA dans la langue correspondante
 
 Cette documentation technique couvre l'ensemble de l'architecture et des composants du système AI Public Speaking Coach.
