@@ -3,13 +3,25 @@ import React, { useRef, useState, useEffect } from 'react';
 interface VideoPlayerProps {
   url: string;
   onClose?: () => void;
+  onTimeUpdate?: (currentTime: number) => void;
+  seekTo?: number | null;
 }
 
-const VideoPlayer: React.FC<VideoPlayerProps> = ({ url, onClose }) => {
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ url, onClose, onTimeUpdate, seekTo }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const [playbackRate, setPlaybackRate] = useState(1);
   const [progress, setProgress] = useState(0);
+
+  // Sync seekTo prop
+  useEffect(() => {
+    if (seekTo !== undefined && seekTo !== null && videoRef.current) {
+      // Only seek if difference is significant to avoid loops
+      if (Math.abs(videoRef.current.currentTime - seekTo) > 0.5) {
+        videoRef.current.currentTime = seekTo;
+      }
+    }
+  }, [seekTo]);
 
   // Gérer la lecture / pause
   const togglePlay = () => {
@@ -38,14 +50,16 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ url, onClose }) => {
   // Mise à jour de la barre de progression
   const handleTimeUpdate = () => {
     if (videoRef.current) {
-      const current = (videoRef.current.currentTime / videoRef.current.duration) * 100;
-      setProgress(current);
+      const current = videoRef.current.currentTime;
+      const progressPercent = (current / videoRef.current.duration) * 100;
+      setProgress(progressPercent);
+      if (onTimeUpdate) onTimeUpdate(current);
     }
   };
 
   return (
     <div className="relative w-full max-w-xl aspect-video rounded-[40px] overflow-hidden border-2 border-cyan-500 bg-black shadow-[0_0_50px_rgba(6,182,212,0.3)] group">
-      
+
       <video
         ref={videoRef}
         src={url}
@@ -57,11 +71,11 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ url, onClose }) => {
 
       {/* OVERLAY DES CONTRÔLES (apparaît au survol) */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-        
+
         {/* Barre de progression */}
         <div className="w-full h-1 bg-white/20 rounded-full mb-4 overflow-hidden">
-          <div 
-            className="h-full bg-cyan-500 transition-all duration-100" 
+          <div
+            className="h-full bg-cyan-500 transition-all duration-100"
             style={{ width: `${progress}%` }}
           />
         </div>
@@ -71,9 +85,9 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ url, onClose }) => {
             {/* Bouton Play/Pause */}
             <button onClick={togglePlay} className="text-white hover:text-cyan-400 transition-colors">
               {isPlaying ? (
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" /></svg>
               ) : (
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
               )}
             </button>
 
@@ -84,7 +98,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ url, onClose }) => {
 
           <div className="flex items-center gap-4">
             {/* Vitesse de lecture */}
-            <button 
+            <button
               onClick={toggleSpeed}
               className="px-3 py-1 border border-white/30 rounded-lg text-xs font-bold text-white hover:bg-white/10"
             >

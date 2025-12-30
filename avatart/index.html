@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avatar FBX avec bouche synchronisée</title>
+
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+        background: #0f172a;
+        font-family: sans-serif;
+    }
+
+    #controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0,0,0,0.7);
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        gap: 10px;
+        z-index: 10;
+    }
+
+    button {
+        padding: 10px 15px;
+        background: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #2980b9;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="controls">
+    <input type="text" id="speechText" placeholder="Enter text to speak" style="padding: 10px; margin-right: 10px; width: 200px;" />
+    <button id="btnIdle">Idle</button>
+    <button id="btnTalking">Talking</button>
+    <button id="btnThankful">Thankful</button>
+    <button id="btnThinking">Thinking</button>
+    <button id="btnTestSpeech">Test Speech</button>
+</div>
+
+<script type="importmap">
+{
+    "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
+
+let scene, camera, renderer;
+let mixer, avatar, mouthMesh;
+let actions = {}, currentAction;
+let isSpeaking = false;
+
+const clock = new THREE.Clock();
+const animations = ['Idle', 'Talking', 'Thankful', 'Thinking'];
+
+init();
+animate();
+
+function createSimpleHead() {
+    const headGroup = new THREE.Group();
+
+    // Head sphere
+    const headGeometry = new THREE.SphereGeometry(0.5, 32, 32);
+    const headMaterial = new THREE.MeshLambertMaterial({ color: 0x8B4513 });
+    const head = new THREE.Mesh(headGeometry, headMaterial);
+    headGroup.add(head);
+
+    // Eyes
+    const eyeGeometry = new THREE.SphereGeometry(0.05, 16, 16);
+    const eyeMaterial = new THREE.MeshLambertMaterial({ color: 0xffffff });
+    const leftEye = new THREE.Mesh(eyeGeometry, eyeMaterial);
+    leftEye.position.set(-0.15, 0.1, 0.4);
+    headGroup.add(leftEye);
+    const rightEye = new THREE.Mesh(eyeGeometry, eyeMaterial);
+    rightEye.position.set(0.15, 0.1, 0.4);
+    headGroup.add(rightEye);
+
+    // Mouth
+    const mouthGeometry = new THREE.BoxGeometry(0.2, 0.05, 0.01);
+    const mouthMaterial = new THREE.MeshLambertMaterial({ color: 0x000000 });
+    mouthMesh = new THREE.Mesh(mouthGeometry, mouthMaterial);
+    mouthMesh.position.set(0, -0.2, 0.45);
+    headGroup.add(mouthMesh);
+
+    headGroup.position.set(0, 1, 0);
+    return headGroup;
+}
+
+function init() {
+
+    // Scene
+    scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x0f172a);
+
+    // Camera
+    camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 100);
+    camera.position.set(0, 2, 5);
+
+    // Renderer
+    renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Lights
+    scene.add(new THREE.AmbientLight(0xffffff, 1));
+    const dirLight = new THREE.DirectionalLight(0xffffff, 5);
+    dirLight.position.set(2, 5, 5);
+    scene.add(dirLight);
+
+    // Controls
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.target.set(0, 1, 0);
+    controls.update();
+
+    // FBX Loader
+    const loader = new FBXLoader();
+
+    animations.forEach(name => {
+        loader.load(`./assets/models/${name}.fbx`, fbx => {
+
+            if (!avatar) {
+                avatar = fbx;
+                avatar.scale.set(0.01, 0.01, 0.01);
+                scene.add(avatar);
+                mixer = new THREE.AnimationMixer(avatar);
+
+                // Replace head mesh with 3D head
+                avatar.traverse(obj => {
+                    if (obj.isMesh && obj.name.toLowerCase().includes('head')) {
+                        const headGroup = createSimpleHead();
+                        headGroup.scale.set(100, 100, 100); // compensate for avatar scale
+                        obj.parent.add(headGroup);
+                        obj.parent.remove(obj);
+                    }
+                });
+            }
+
+            if (fbx.animations.length > 0) {
+                actions[name] = mixer.clipAction(fbx.animations[0]);
+                if (name === 'Idle') {
+                    actions[name].play();
+                    currentAction = actions[name];
+                }
+            }
+        });
+    });
+
+    // Buttons
+    document.getElementById('btnIdle').onclick = () => playAnimation('Idle');
+
+    document.getElementById('btnTalking').onclick = () => {
+        playAnimation('Talking');
+        isSpeaking = true;
+    };
+
+    document.getElementById('btnThankful').onclick = () => playAnimation('Thankful');
+    document.getElementById('btnThinking').onclick = () => playAnimation('Thinking');
+
+    document.getElementById('btnTestSpeech').onclick = () => {
+        const text = document.getElementById('speechText').value || 'Hello, this is a test speech.';
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.onstart = () => {
+            playAnimation('Talking');
+            isSpeaking = true;
+        };
+        utterance.onend = () => {
+            playAnimation('Idle');
+            isSpeaking = false;
+        };
+        window.speechSynthesis.speak(utterance);
+    };
+
+    window.addEventListener('resize', onResize);
+}
+
+function playAnimation(name) {
+    if (!actions[name] || actions[name] === currentAction) return;
+    actions[name].reset().fadeIn(0.5).play();
+    if (currentAction) currentAction.fadeOut(0.5);
+    currentAction = actions[name];
+    if (name === 'Idle') isSpeaking = false;
+}
+
+function animate() {
+    requestAnimationFrame(animate);
+    const delta = clock.getDelta();
+    if (mixer) mixer.update(delta);
+
+    // Mouth animation
+    if (mouthMesh) {
+        if (isSpeaking) {
+            mouthMesh.scale.y = 1 + Math.sin(Date.now() * 0.01) * 0.5;
+            mouthMesh.scale.x = 1 + Math.sin(Date.now() * 0.01 + Math.PI / 2) * 0.3;
+        } else {
+            mouthMesh.scale.set(1, 1, 1);
+        }
+    }
+
+    renderer.render(scene, camera);
+}
+
+function onResize() {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+}
+</script>
+
+</body>
+</html>

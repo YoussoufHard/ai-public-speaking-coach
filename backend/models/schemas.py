@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing import List, Dict, Any
 
 class TimelineEvent(BaseModel):
-    time: int
+    time: float
     event: str
 
 class Feedback(BaseModel):
@@ -13,3 +13,5 @@ class AnalysisResponse(BaseModel):
     scores: Dict[str, float]
     timeline: List[TimelineEvent]
     feedback: Feedback
+    detected_language: str = "fr"
+    audio_url: str = None

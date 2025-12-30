@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 .env
 data/videos/*.mp4
+backend/static/audio/*.mp3
