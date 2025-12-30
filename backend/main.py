@@ -5,6 +5,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routers.analyze import router as analyze_router
+from routers.tts import router as tts_router
+from fastapi.staticfiles import StaticFiles
 
 app = FastAPI(
     title="AI Public Speaking Coach API",
@@ -23,6 +25,13 @@ app.add_middleware(
 
 # Include routers
 app.include_router(analyze_router)
+app.include_router(tts_router)
+
+# Mount static files
+static_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
+if not os.path.exists(static_dir):
+    os.makedirs(static_dir)
+app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 @app.get("/")
 async def root():

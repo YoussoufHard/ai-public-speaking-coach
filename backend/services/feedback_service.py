@@ -27,5 +27,9 @@ def generate_feedback_response(scores: dict, audio_metrics: dict = None) -> dict
             transcription = audio_metrics["transcription"]
 
     print(f"Using language for feedback: {detected_language}")  # Debug log
-    feedback = generate_feedback(scores, global_score, weaknesses, transcription, detected_language)
-    return feedback
+    feedback_content = generate_feedback(scores, global_score, weaknesses, transcription, detected_language)
+    
+    return {
+        "feedback": feedback_content,
+        "detected_language": detected_language
+    }

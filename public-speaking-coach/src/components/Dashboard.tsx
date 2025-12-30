@@ -1,6 +1,8 @@
 import React from 'react';
 import { Zap, Activity, BarChart3 } from 'lucide-react';
 import GlassCard from './GlassCard';
+import RealisticAvatarIntegrated from './RealisticAvatarHuman';
+import { Suspense } from 'react';
 
 const Dashboard: React.FC = () => {
   return (
@@ -8,15 +10,15 @@ const Dashboard: React.FC = () => {
       <h1 className="text-2xl font-black mb-8 tracking-tighter uppercase text-cyan-500">
         Overview Analysis
       </h1>
-      
+
       <div className="grid grid-cols-12 gap-6 items-center flex-1">
-        
+
         {/* Côté Gauche */}
         <div className="col-span-3 space-y-6">
           <GlassCard title="Vocabulary Range" icon={Zap}>
             <div className="text-center py-4">
               <div className="text-2xl font-black italic tracking-tighter leading-none text-white">
-                INNOVATION<br/>
+                INNOVATION<br />
                 <span className="text-white/40 text-sm">FUTURE</span>
               </div>
             </div>
@@ -32,20 +34,28 @@ const Dashboard: React.FC = () => {
         </div>
 
         {/* Centre - Avatar */}
-        <div className="col-span-6 flex justify-center">
-          <img 
-            src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" 
-            className="w-80 h-80 drop-shadow-[0_0_35px_rgba(6,182,212,0.4)] transition-transform hover:scale-105 duration-500"
-            alt="Avatar"
-          />
+        <div className="col-span-6 flex justify-center h-[500px]">
+          <Suspense fallback={
+            <div className="w-80 h-80 flex flex-col items-center justify-center bg-white/5 rounded-[32px] border border-white/10 animate-pulse">
+              <p className="text-cyan-500 text-[10px] font-black uppercase tracking-[0.2em]">Synchronizing...</p>
+            </div>
+          }>
+            <div className="w-full h-full drop-shadow-[0_0_50px_rgba(6,182,212,0.2)]">
+              <RealisticAvatarIntegrated
+                audioUrl={null}
+                isPlaying={false}
+                isRecording={false}
+              />
+            </div>
+          </Suspense>
         </div>
 
         {/* Côté Droit */}
         <div className="col-span-3 space-y-6">
           <GlassCard title="Delivery Score" icon={BarChart3}>
-             <div className="text-center py-4">
-                <span className="text-4xl font-black text-cyan-400">82%</span>
-             </div>
+            <div className="text-center py-4">
+              <span className="text-4xl font-black text-cyan-400">82%</span>
+            </div>
           </GlassCard>
 
           <GlassCard title="Hesitance Dial" icon={Activity}>

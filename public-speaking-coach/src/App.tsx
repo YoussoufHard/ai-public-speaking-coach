@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { 
-  LayoutDashboard, Mic, History, Settings, 
-  ChevronLeft, ChevronRight 
+import {
+  LayoutDashboard, Mic, History, Settings,
+  ChevronLeft, ChevronRight
 } from 'lucide-react';
 // Correction 1: Ajout de useLocation dans l'import
 import { Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
@@ -12,9 +12,10 @@ import RecordSession from './components/RecordSession';
 const App: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation(); // Correction 2: Nécessite l'import ci-dessus
-  
+
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isRecording, setIsRecording] = useState(false);
+  const [isUploading, setIsUploading] = useState(false); // New state to manage upload/analysis status
 
   // Correction 3: Suppression de la variable activeTab en double
   // On utilise l'URL comme seule source de vérité
@@ -22,13 +23,13 @@ const App: React.FC = () => {
 
   return (
     <div className="flex h-screen bg-[#05070a] text-white overflow-hidden font-sans">
-      
+
       {/* SIDEBAR */}
-      <aside 
+      <aside
         className={`relative border-r border-white/5 bg-black/40 backdrop-blur-2xl transition-all duration-500 ease-in-out flex flex-col z-50 
         ${isSidebarOpen ? 'w-64 p-6' : 'w-20 p-4'}`}
       >
-        <button 
+        <button
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
           className="absolute -right-3 top-12 bg-cyan-500 text-black rounded-full p-1 shadow-[0_0_15px_#06b6d4] hover:scale-110 transition-transform z-[60]"
         >
@@ -48,48 +49,50 @@ const App: React.FC = () => {
 
         {/* NAVIGATION */}
         <nav className="flex-1 space-y-3">
-          <NavButton 
-            icon={LayoutDashboard} 
-            label="Dashboard" 
-            active={currentTab === 'dashboard'} 
+          <NavButton
+            icon={LayoutDashboard}
+            label="Dashboard"
+            active={currentTab === 'dashboard'}
             collapsed={!isSidebarOpen}
-            onClick={() => navigate('/dashboard')} 
+            onClick={() => navigate('/dashboard')}
           />
-          <NavButton 
-            icon={Mic} 
-            label="Record" 
-            active={currentTab === 'record'} 
+          <NavButton
+            icon={Mic}
+            label="Record"
+            active={currentTab === 'record'}
             collapsed={!isSidebarOpen}
-            onClick={() => navigate('/record')} 
+            onClick={() => navigate('/record')}
           />
-          <NavButton 
-            icon={History} 
-            label="History" 
-            active={currentTab === 'history'} 
+          <NavButton
+            icon={History}
+            label="History"
+            active={currentTab === 'history'}
             collapsed={!isSidebarOpen}
-            onClick={() => navigate('/history')} 
+            onClick={() => navigate('/history')}
           />
         </nav>
 
         <div className={`pt-6 border-t border-white/5 ${!isSidebarOpen && 'flex justify-center'}`}>
-          <NavButton 
-            icon={Settings} 
-            label="Settings" 
-            collapsed={!isSidebarOpen} 
+          <NavButton
+            icon={Settings}
+            label="Settings"
+            collapsed={!isSidebarOpen}
             onClick={() => navigate('/settings')}
           />
         </div>
       </aside>
 
       {/* CONTENU PRINCIPAL */}
-      <main className="flex-1 relative overflow-y-auto bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#1a2c38]/20 via-[#05070a] to-[#05070a]">
+      <main className="flex-1 relative overflow-hidden flex flex-col bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#1a2c38]/20 via-[#05070a] to-[#05070a]">
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/record" element={
-            <RecordSession 
-              isRecording={isRecording} 
-              setIsRecording={setIsRecording} 
+            <RecordSession
+              isRecording={isRecording}
+              setIsRecording={setIsRecording}
+              isUploading={isUploading}
+              setIsUploading={setIsUploading}
             />
           } />
           {/* Ajout d'une route temporaire pour éviter l'écran vide au clic sur History */}
